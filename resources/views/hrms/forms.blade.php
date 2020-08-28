@@ -20,7 +20,7 @@
                                 <ul class="fs15 list-splitter mb30">
                                     <li>
 
-                                        <h4><a class="link-unstyled" href="/download/Form10C.pdf" title="">
+                                        <h4><a class="link-unstyled" href="#" title="">
                                             <i class="fa fa-cloud-download text-alert pr10"></i> Form1 </a></h4>
                                     </li>
                                     <li>
@@ -63,7 +63,7 @@
                                 <ul class="fs15 list-splitter mb30">
                                     <li>
 
-                                        <h4><a class="link-unstyled" href="/download/Form10C.pdf" title="">
+                                        <h4><a class="link-unstyled" href="#" title="">
                                                 <i class="fa fa-cloud-download text-alert pr10"></i> Form1 </a></h4>
                                     </li>
                                     <li>

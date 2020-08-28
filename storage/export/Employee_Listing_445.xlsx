@@ -1,0 +1,3 @@
+id,photo,code,name,status,gender,date_of_birth,date_of_joining,number,qualification,emergency_number,pan_number,father_name,current_address,permanent_address,formalities,offer_acceptance,probation_period,date_of_confirmation,department,salary,account_number,bank_name,ifsc_code,pf_account_number,un_number,pf_status,date_of_resignation,notice_period,last_working_day,full_final,user_id,created_at,updated_at
+1,"Not available",HR0001,"HR Manager",1,1,0000-00-00,0000-00-00,9999999999,,,,,,,0,0,,0000-00-00,,,,,,,,0,0000-00-00,,0000-00-00,0
+2,7CQnfet0B1m9.png,HR0002,"idowu olayinka",1,0,2020-08-26,2020-08-26,2345678975,MCA,1234567899,,,,,1,1,0,2020-08-26,IT,500000,2066084772,uba,222222,3071520350,12345678,1,2020-08-26,1,2020-08-20,1

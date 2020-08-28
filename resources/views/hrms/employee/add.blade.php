@@ -547,13 +547,13 @@
 
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> PAN Number </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> National Identity Number </h6></label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <input type="text" name="pan_number" id="pan_number" class="gui-input"
                                                        value="@if($emps && $emps->employee->pan_number){{$emps->employee->pan_number}}@endif">
                                             @else
-                                                <input type="text" placeholder="PAN" name="pan_number"
+                                                <input type="text" placeholder="NIN" name="pan_number"
                                                        id="pan_number" class="gui-input">
 
                                             @endif
@@ -562,14 +562,14 @@
 
 
                                     <div class="section">
-                                        <label for="input002"><h6 class="mb20 mt40"> Father's Name </h6></label>
+                                        <label for="input002"><h6 class="mb20 mt40"> Email </h6></label>
                                         <label for="input002" class="field prepend-icon">
                                             @if(\Route::getFacadeRoot()->current()->uri() == 'edit-emp/{id}')
                                                 <input type="text" name="father_name" id="father_name" class="gui-input"
                                                        value="@if($emps && $emps->employee->father_name){{$emps->employee->father_name}}@endif">
 
                                             @else
-                                                <input type="text" placeholder="Employees' father name"
+                                                <input type="text" placeholder="Email"
                                                        name="father_name" id="father_name" class="gui-input">
 
                                             @endif
@@ -826,7 +826,7 @@
                                         </label>
                                     </div>
 
-
+{{-- 
                                     <div class="section">
                                         <label for="input002"><h6 class="mb20 mt40"> IFSC Code </h6></label>
                                         <label for="input002" class="field prepend-icon">
@@ -900,7 +900,7 @@
                                                        @if(isset($emps))@if($emps->employee->pf_status == '0')checked @endif @endif>
                                                 <span class="radio"></span>Inactive</label>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <!-- -------------- /section -------------- -->
 
                                 </section>

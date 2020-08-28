@@ -1,17 +1,29 @@
 <!-- -------------- Sidebar - Author -------------- -->
+
+
+<style>
+    .sidebar-title{
+        text-transform: capitalize !important;
+        font-size: 16px !important
+    }
+    .caret{
+        float: right !important;
+        margin-right: 20px !important;
+    }
+</style>
 <div class="sidebar-widget author-widget">
-    <div class="media">
-        <a href="/profile" class="media-left">
+    <div class="media text-center">
+        <a href="/profile" class="media-left" style=" display: block !important; margin: 0 auto !important">
             @if(Auth::user()->employee->photo)
-                <img src="{{Auth::user()->employee->photo}}" width="40px" height="30px" class="img-responsive">
+                <img src="{{Auth::user()->employee->photo}}" width="40px" height="30px" class="img-responsive"  style="border-radius: 50%; display: block !important; margin: 0 auto !important;">
             @else
-                <img src="{{ URL::asset('assets/img/avatars/profile_pic.png') }}" class="img-responsive">
+                <img src="{{ URL::asset('assets/img/avatars/profile_pic.png') }}" class="img-responsive" style="border-radius: 50%;  display: block !important; margin: 0 auto !important;">
             @endif
 
         </a>
-
+        <div class="clearfix"></div>
         <div class="media-body">
-            <div class="media-author"><a href="/profile">{{Auth::user()->name}}</a></div>
+            <div class="media-author"><a href="/profile" style="display:block !important; margin: 0 50% !important; margin-top: 10px !important; width: 100% !important; color: #fff ">{{Auth::user()->name}}</a></div>
         </div>
     </div>
 </div>
@@ -113,10 +125,10 @@
                 <span class="caret"></span>
             </a>
             <ul class="nav sub-nav">
-                <li>
+                {{-- <li>
                     <a href="{{route('add-team')}}">
                         <span class="glyphicon glyphicon-book"></span> Add Team </a>
-                </li>
+                </li> --}}
                 <li>
                     <a href="{{route('team-listing')}}">
                         <span class="glyphicon glyphicon-modal-window"></span> Team Listings </a>
@@ -333,21 +345,21 @@
     @endif
 
     {{--<li class="sidebar-label pt30"> Extras</li>--}}
-    <li>
+    {{-- <li>
         <a href="/create-meeting">
             <span class="fa fa-calendar-o"></span>
             <span class="sidebar-title"> Meeting  &nbsp Invitation </span>
         </a>
-    </li>
+    </li> --}}
 
-    @if(Auth::user()->isCoordinator() ||  Auth::user()->isHR())
+    {{-- @if(Auth::user()->isCoordinator() ||  Auth::user()->isHR())
         <li>
             <a href="/create-event">
                 <span class="fa fa-calendar-o"></span>
                 <span class="sidebar-title"> Event  &nbsp Invitation </span>
             </a>
         </li>
-    @endif
+    @endif --}}
     <li>
 
         <a href="/download-forms">

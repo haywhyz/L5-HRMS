@@ -53,8 +53,8 @@
                                             <th class="text-center">Employee</th>
                                             <th class="text-center">Bank Name</th>
                                             <th class="text-center">Account Number</th>
-                                            <th class="text-center">Ifsc Code</th>
-                                            <th class="text-center">Pf Account Number</th>
+                                            {{-- <th class="text-center">Ifsc Code</th>
+                                            <th class="text-center">Pf Account Number</th> --}}
                                             <th class="text-center">Actions</th>
                                         </tr>
                                         </thead>
@@ -66,8 +66,8 @@
                                                 <td class="text-center">{{$emp->name}}</td>
                                                 <td class="text-center">{{$emp->employee['bank_name']}}</td>
                                                 <td class="text-center">{{$emp->employee['account_number']}}</td>
-                                                <td class="text-center">{{$emp->employee['ifsc_code']}}</td>
-                                                <td class="text-center">{{$emp->employee['pf_account_number']}}</td>
+                                                {{-- <td class="text-center">{{$emp->employee['ifsc_code']}}</td> --}}
+                                                {{-- <td class="text-center">{{$emp->employee['pf_account_number']}}</td> --}}
                                                 <td class="text-center">
                                                     <div class="btn-group text-right">
                                                         <button type="button"
@@ -76,9 +76,9 @@
                                                                 "{{$emp->id}}",
                                                                 "{{$emp->name}}",
                                                                 "{{$emp->bank_name}}",
-                                                                "{{$emp->account_number}}",
-                                                                "{{$emp->ifsc_code}}",
-                                                                "{{$emp->pf_account_number}}"
+                                                                "{{$emp->account_number}}"
+                                                                {{-- "{{$emp->ifsc_code}}", --}}
+                                                                {{-- "{{$emp->pf_account_number}}" --}}
                                                                 ]'> Edit
                                                         </button>
                                                     </div>
@@ -111,7 +111,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                    <h4 class="modal-title">Update Account Details</h4>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
@@ -129,7 +129,7 @@
                         <input type="text" id="account_number" class="form-control">
                     </div>
 
-                    <div class="form-group">
+                    {{-- <div class="form-group">
                         <label for="ifsc_code">Ifsc Code</label>
                         <input type="text" id="ifsc_code" class="form-control">
                     </div>
@@ -137,7 +137,7 @@
                     <div class="form-group">
                         <label for="pf_account_number">Pf Account Number</label>
                         <input type="text" id="pf_account_number" class="form-control">
-                    </div>
+                    </div> --}}
                     <input type="hidden" id="emp_id" class="form-control">
                 </div>
                 <div class="modal-footer">

@@ -63,6 +63,13 @@
         .blink_third {
             color:yellow;
         }
+        .footer-legal{
+            font-size: 14px;
+            text-align: center !important;
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
     </style>
 
 </head>
@@ -479,11 +486,11 @@
         <!-- -------------- Page Footer -------------- -->
         <footer id="content-footer" class="affix">
             <div class="row">
-                <div class="col-md-6">
-                    <span class="footer-legal">Human Resource Management System © 2016 All rights reserved. By <a
-                                href="mailto:andrewarianda@gmail.com.com?Subject=HRM%20Software" target="_blank">Clint A. Andrew</a></span>
+                <div class="col-md-12">
+                    <span class="footer-legal">Human Resource Management System © 2020 All rights reserved. By <a
+                                href="http://www.zealaraxtechnologies.com" target="_blank" style="color: #fff">Zealarax Technologies</a></span>
                 </div>
-                <div class="col-md-6 text-right">
+                <div class="col-md-6 text-right anglee-iconn">
                     <span class="footer-meta"></span>
                     <a href="#content" class="footer-return-top">
                         <span class="fa fa-angle-up"></span>
@@ -491,6 +498,13 @@
                 </div>
             </div>
         </footer>
+        <style>
+            .anglee-iconn{
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+            }
+        </style>
         <!-- -------------- /Page Footer -------------- -->
         @endif
 

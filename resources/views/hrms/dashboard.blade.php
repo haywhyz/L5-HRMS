@@ -99,7 +99,19 @@
                     </div>
                 </div>
             </div>
-
+            <div class="col-sm-6 col-xl-3">
+                <div class="panel panel-tile">
+                    <div class="panel-body">
+                        <div class="row pv10">
+                            <div class="col-xs-5 ph10"><img src="{{ URL::asset('assets/img/pages/clipart6.png') }}"
+                                                            class="img-responsive mauto" alt=""/></div>
+                            <div class="col-xs-7 pl5">
+                                <h3 class="text-muted"><a href="{{route('hr-policy')}}"> HR POLICIES </a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             @endif
                 @if(!Auth::user()->isHR())
@@ -118,19 +130,7 @@
                 </div>
                 @endif
 
-            <div class="col-sm-6 col-xl-3">
-                <div class="panel panel-tile">
-                    <div class="panel-body">
-                        <div class="row pv10">
-                            <div class="col-xs-5 ph10"><img src="{{ URL::asset('assets/img/pages/clipart6.png') }}"
-                                                            class="img-responsive mauto" alt=""/></div>
-                            <div class="col-xs-7 pl5">
-                                <h3 class="text-muted"><a href="{{route('hr-policy')}}"> HR POLICIES </a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
 
                 @if($events)
                 <div class="col-md-12">

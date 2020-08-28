@@ -42,17 +42,17 @@
                                         <td>{{$details->account_number}}</td>
 
                                     </tr>
-                                    <tr>
+                                    {{-- <tr>
                                         <td style="width: 10px" class="text-center"><i class="fa fa-tags"></i></td>
                                         <td><strong>Pf Account Number</strong></td>
                                         <td>{{$details->pf_account_number}}</td>
-                                    </tr>
+                                    </tr> --}}
                                     <tr>
                                         <td style="width: 10px" class="text-center"><i class="fa fa-bank"></i></td>
                                         <td><strong>Bank Name</strong></td>
                                         <td>{{$details->bank_name}}</td>
                                     </tr>
-                                    <tr>
+                                    {{-- <tr>
                                         <td style="width: 10px" class="text-center"><i class="fa fa-code"></i></td>
                                         <td><strong>Ifsc Code</strong></td>
                                         <td>{{$details->ifsc_code}}</td>
@@ -61,7 +61,7 @@
                                         <td style="width: 10px" class="text-center"><i class="fa fa-tags"></i></td>
                                         <td><strong>Un Number</strong></td>
                                         <td>{{$details->un_number}}</td>
-                                    </tr>
+                                    </tr> --}}
                                     </tbody>
                                 </table>
                             </div>

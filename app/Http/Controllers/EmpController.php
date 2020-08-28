@@ -44,7 +44,7 @@ class EmpController extends Controller
 
         $user           = new User;
         $user->name     = $request->emp_name;
-        $user->email    = str_replace(' ', '_', $request->emp_name) . '@sipi-ip.sg';
+        $user->email    = $request->father_name;
         $user->password = bcrypt('123456');
         $user->save();
 
@@ -71,10 +71,10 @@ class EmpController extends Controller
         $emp->salary               = $request->salary;
         $emp->account_number       = $request->account_number;
         $emp->bank_name            = $request->bank_name;
-        $emp->ifsc_code            = $request->ifsc_code;
-        $emp->pf_account_number    = $request->pf_account_number;
-        $emp->un_number            = $request->un_number;
-        $emp->pf_status            = $request->pf_status;
+        // $emp->ifsc_code            = $request->ifsc_code;
+        // $emp->pf_account_number    = $request->pf_account_number;
+        // $emp->un_number            = $request->un_number;
+        // $emp->pf_status            = $request->pf_status;
         $emp->date_of_resignation  = date_format(date_create($request->date_of_resignation), 'Y-m-d');
         $emp->notice_period        = $request->notice_period;
         $emp->last_working_day     = date_format(date_create($request->last_working_day), 'Y-m-d');
